@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
 
-  <link rel="stylesheet" href="./css/styles.min.css">
+  <link rel="stylesheet" href="css/styles.min.css">
   <title>Casa Criativa</title>
 </head>
 
@@ -18,7 +18,9 @@
 
   <div id="container">
     <section class="sidebar">
-      <div class="logo"><strong>CASA</strong><thin>CRIATIVA</thin></div>
+      <div class="logo"><strong>CASA</strong>
+        <thin>CRIATIVA</thin>
+      </div>
       <span>Ideias para a crise</span>
       <p>Ficar em casa em períodos longos, não é nada fácil.</p>
       <p>Por isso, iremos catalogar <b>ideias</b>, <b>brincadeiras</b>, <b>jogos</b>, <b>filmes</b>, <b>livros</b>,
@@ -27,7 +29,7 @@
       <p>Comece clicanco em ver <b>ver ideias</b> para ver as ideias cadastradas ou contribua <b>adicionando sua
           ideia</b>.</p>
       <div class="container-ideias-button">
-        <button class="add-ideias-bt hover">+ Adicionar Ideia</button>
+        <button class="add-ideias-bt hover" onClick="onOff()">+ Adicionar Ideia</button>
         <button class="view-ideias-bt hover">Ver ideias</button>
       </div>
 
@@ -108,6 +110,47 @@
 
     </section>
   </div>
+
+  <!-- Modal -->
+  <div id="modal" class="hide">
+    <div class="content">
+      <h1>Nova Ideia</h1>
+
+      <form action="">
+
+        <div class="input-container">
+
+          <div>
+            <label for="title">Título da ideia</label>
+            <input type="text" name="title">
+          </div>
+
+          <div>
+            <label for="title">Categoria</label>
+            <input type="text" name="category">
+          </div>
+        </div>
+
+        <label for="title">Link da imagem</label>
+        <input type="url" name="image">
+
+        <label for="title">Digite uma descrição para essa ideia</label>
+        <textarea name="description" cols="30" rows="10"></textarea>
+
+        <label for="title">Link da ideia</label>
+        <input type="text" name="link">
+
+      </form>
+
+      <div class="button-container">
+        <button onclick="onOff()">Cancelar</button>
+        <button>Adicionar</button>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="js/main.min.js"></script>
 </body>
 
 </html>

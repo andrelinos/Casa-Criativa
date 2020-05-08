@@ -7,8 +7,9 @@
 }
 
 .sidebar {
+  width: 260px;
+  padding: 10px;
   display: flex;
-  flex: 1;
   margin-right: 15px;
   flex-direction: column;
 }
@@ -68,6 +69,7 @@
 
 .container-ideias {
   flex: 3;
+  padding: 10px;
 }
 
 .feature-image {
@@ -152,4 +154,94 @@
 .footer-ideia .view-ideia-bt {
   color: $pink;
   font-size: 0.8em;
+}
+
+/* MODAL */
+#modal {
+  background: $pink;
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 222;
+}
+
+#modal h1 {
+  text-align: center;
+  color: $gray-100;
+  font-size: 3em;
+}
+
+#modal > label {
+  font-weight: 500;
+}
+
+#modal .content {
+  margin-top: 128px;
+  color: $gray-100;
+}
+
+#modal form {
+  width: 80%;
+  width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+#modal form .input-container {
+  display: flex;
+}
+
+#modal form .input-container input {
+  width: 290px;
+}
+
+#modal form input,
+#modal form textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid rgba(141, 25, 50, 0.8);
+  font-size: 16px;
+  margin-top: 6px;
+  margin-bottom: 15px;
+}
+
+#modal .button-container {
+  text-align: right;
+}
+
+#modal .button-container button {
+  background: $gray-100;
+  width: 150px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  margin-left: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#modal .button-container :nth-child(1) {
+  background: $gray-600;
+  color: $gray-100;
+}
+#modal .button-container :nth-child(2) {
+  background: $gray-600;
+  color: $gray-100;
+}
+
+#modal .button-container :nth-child(1):hover {
+  background: $red;
+}
+
+#modal .button-container :nth-child(2):hover {
+  background: $teal;
 }

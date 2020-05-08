@@ -1,6 +1,7 @@
 /*!
  * Copyright 2013-2020 Andrelino Silva
  * Licensed under MIT (https://github.com/andrelinos/casacriativa/blob/master/LICENSE)
+ * README MIT (https://github.com/andrelinos/casacriativa/blob/master/README)
  */
 
 * {
@@ -12,7 +13,7 @@
 }
 
 body {
-  font-family: 'Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-family: 'Muli', -apple-system, BlinkMacSystemFont, 'Roboto', Segoe UI 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   padding-top: 54px;
   color: #f8f9fa;
   background: #2f3640;
@@ -30,7 +31,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Roboto', Segoe UI 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   font-weight: 700;
   text-transform: uppercase;
   color: #48dbfb;
@@ -83,8 +84,9 @@ button {
 }
 
 .sidebar {
+  width: 260px;
+  padding: 10px;
   display: flex;
-  flex: 1;
   margin-right: 15px;
   flex-direction: column;
 }
@@ -144,6 +146,7 @@ button {
 
 .container-ideias {
   flex: 3;
+  padding: 10px;
 }
 
 .feature-image {
@@ -230,4 +233,110 @@ button {
 .footer-ideia .view-ideia-bt {
   color: #e83e8c;
   font-size: 0.8em;
+}
+
+/* MODAL */
+#modal {
+  background: #e83e8c;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 222;
+}
+
+#modal h1 {
+  text-align: center;
+  color: #f8f9fa;
+  font-size: 3em;
+}
+
+#modal > label {
+  font-weight: 500;
+}
+
+#modal .content {
+  margin-top: 128px;
+  color: #f8f9fa;
+}
+
+#modal form {
+  width: 80%;
+  width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+#modal form .input-container {
+  display: flex;
+}
+
+#modal form .input-container input {
+  width: 290px;
+}
+
+#modal form input,
+#modal form textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid rgba(141, 25, 50, 0.8);
+  font-size: 16px;
+  margin-top: 6px;
+  margin-bottom: 15px;
+}
+
+#modal .button-container {
+  text-align: right;
+}
+
+#modal .button-container button {
+  background: #f8f9fa;
+  width: 150px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  margin-left: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#modal .button-container :nth-child(1) {
+  background: #868e96;
+  color: #f8f9fa;
+}
+
+#modal .button-container :nth-child(2) {
+  background: #868e96;
+  color: #f8f9fa;
+}
+
+#modal .button-container :nth-child(1):hover {
+  background: #dc3545;
+}
+
+#modal .button-container :nth-child(2):hover {
+  background: #20c997;
+}
+
+@media (max-width: 767px) {
+  .container-ideias-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+  }
+  .container-ideias-button button {
+    margin: 10px;
+  }
+}
+
+#modal.hide {
+  display: none;
 }
