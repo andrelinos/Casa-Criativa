@@ -11,145 +11,182 @@
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
 
   <link rel="stylesheet" href="css/styles.min.css">
-  <title>Casa Criativa</title>
+  <title>Clone Linkedin</title>
 </head>
 
 <body>
+    <div class="container">
 
-  <div id="container">
-    <section class="sidebar">
-      <div class="logo"><strong>CASA</strong>
-        <thin>CRIATIVA</thin>
-      </div>
-      <span>Ideias para a crise</span>
-      <p>Ficar em casa em períodos longos, não é nada fácil.</p>
-      <p>Por isso, iremos catalogar <b>ideias</b>, <b>brincadeiras</b>, <b>jogos</b>, <b>filmes</b>, <b>livros</b>,
-        <b>cursos</b>, <b>dicas</b> e tudo que for necessário para tornar esse momento interessante
-        e descontraído.</p>
-      <p>Comece clicanco em ver <b>ver ideias</b> para ver as ideias cadastradas ou contribua <b>adicionando sua
-          ideia</b>.</p>
-      <div class="container-ideias-button">
-        <button class="add-ideias-bt hover" onClick="onOff()">+ Adicionar Ideia</button>
-        <button class="view-ideias-bt hover">Ver ideias</button>
+      <div class="side-left">
+        <div class="user-info">
+          <header>
+            <div class="avatar"></div>
+          </header>
+          <div class="name">Andrelino Silva</div>
+          <div class="bio">Cursando na Rocketseat |JavaScript, NodeJS, ReactJS, React Native pela @rocketsea</div>
+          <div>Quem viu seu perfil <span>213</span></div>
+          <div>Viram sua publicação <span>113</span></div>
+          <div class="saved-items">Itens salvos</div>
+        </div>
       </div>
 
-      <p class="with-love">Com 💜 Andrelino Silva</p>
-    </section>
-    <section class="container-ideias">
-      <div class="container-ideia">
-        <div class="feature-image"><img src="./img/01.jpg" alt="" srcset=""></div>
-        <div class="body-ideia">
-          <div class="title-ideia">Curso de Programação</div>
-          <div class="category-ideia">Estudo</div>
-          <div class="description-ideia">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi, excepturi.
+      <div class="feed">
+        <ul>
+          <li>React Native</li>
+          <li># homeoffice</li>
+          <li>css3</li>
+          <li>vagas</li>
+          <li>rocketseat</li>
+        </ul>
+      </div>
+
+      <div class="list-group">
+        <ul>
+          <li>React Native</li>
+          <li>React JS</li>
+          <li>JavaScript</li>
+          <li>Visualizar todos</li>
+        </ul>
+      </div>
+
+      <div class="list-events">
+        <ul>
+          <li>homeoffice</li>
+          <li>css3</li>
+          <li>vagas</li>
+          <li>Visualizar mais ></li>
+        </ul>
+
+        <div class="list-discovery">Descubra mais</div>
+      </div>
+
+      <div class="main">
+        <div class="post">
+          <div class="create-new-pub">[>] Começar uma publicação</div>
+          <div class="pub-options">
+            <div class="camera"></div>
+            <div class="video"></div>
+            <div class="doc"></div>
+            <div class="write-pub"></div>
           </div>
-          <div class="footer-ideia">
-            <span class="share">Compartilhe: </span>
-            <button class="whatsapp hover"><i class="fab fa-whatsapp"></i></button>
-            <button class="hover facebook"><i class="fab fa-facebook"></i></button>
-            <button class="hover linkedin"><i class="fab fa-linkedin"></i></button>
-            <button class="hover email"><i class="fa fa-envelope"></i></button>
-            <button class="view-ideia-bt bold hover">Ver Ideia</button>
+        </div>
+
+        <div class="container-pub">
+          <header>
+            <div class="avatar"></div>
+            <div class="description">
+              <div class="name-user">Andrelino Silva 2</div>
+              <div class="about">Desenvolvedor de software na empresa do futuro.</div>
+              <div class="edited">1 sem . Editado .</div>
+            </div>
+          </header>
+
+          <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.</p>
+          <div class="post-img"><img src="https://picsum.photos/600/600"></div>
+          <div class="post-likes">
+            :like:, :heart:
+          </div>
+          <div class="post-foot-items">
+            <div class="like">Gostei</div>
+            <div class="comment">Comentar</div>
+            <div class="share">Compartilhar</div>
+            <div class="send">Enviar</div>
           </div>
         </div>
       </div>
 
-      <div class="container-ideia">
-        <div class="feature-image"><img src="./img/02.jpg" alt="" srcset=""></div>
-        <div class="body-ideia">
-          <div class="title-ideia">Esteira</div>
-          <div class="category-ideia">Academia</div>
-          <div class="description-ideia">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi, excepturi.
+      <div class="side-right">
+        <div class="publicity">
+          <div class="description">Your dream job is closer than you think</div>
+          <button>See jobs</button>
+          <div class="linkedin-logo"><img src="https://static-exp1.licdn.com/scds/common/u/images/promo/ads/li_evergreen_jobs_ad_300x250_v1.jpg" alt=""></div>
+        </div>
+
+        <div class="follows-module">
+          <span>i</span>
+
+          <div class="follow-suggest">
+            <div class="logo"><img src="https://media-exp1.licdn.com/dms/image/C4D0BAQGNqUR-YtHFAQ/company-logo_100_100/0?e=1602115200&v=beta&t=spaeLZnI6gnX0P0paAJaOohr3xhyGM4zYQPagWBXbXs" alt=""></div>
+            <div>
+              <div class="name-suggest">Natura</div>
+              <div class="description">Empresa - Cosmética</div>
+            </div>
+            <button>+ Seguir</button>
           </div>
-          <div class="footer-ideia">
-            <span class="share">Compartilhe: </span>
-            <button class="whatsapp hover"><i class="fab fa-whatsapp"></i></button>
-            <button class="hover facebook"><i class="fab fa-facebook"></i></button>
-            <button class="hover linkedin"><i class="fab fa-linkedin"></i></button>
-            <button class="hover email"><i class="fa fa-envelope"></i></button>
-            <button class="view-ideia-bt bold hover">Ver Ideia</button>
+
+          <div class="follow-suggest">
+            <div class="logo"><img src="https://media-exp1.licdn.com/dms/image/C4E0BAQEf1rmP9qtO_A/company-logo_100_100/0?e=1602115200&v=beta&t=X2lrqpztw4LajlRw-tq2NiP-Qexr4vQx4xv8rM0oGrc" alt=""></div>
+            <div>
+              <div class="name-suggest">The Developers Conference</div>
+              <div class="description">Empresa - Software</div>
+            </div>
+            <button>+ Seguir</button>
           </div>
+
         </div>
       </div>
+    </div>
 
-      <div class="container-ideia">
-        <div class="feature-image"><img src="./img/03.jpg" alt="" srcset=""></div>
-        <div class="body-ideia">
-          <div class="title-ideia">Meditação</div>
-          <div class="category-ideia">Atividade física</div>
-          <div class="description-ideia">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi, excepturi.
-          </div>
-          <div class="footer-ideia">
-            <span class="share">Compartilhe: </span>
-            <button class="whatsapp hover"><i class="fab fa-whatsapp"></i></button>
-            <button class="hover facebook"><i class="fab fa-facebook"></i></button>
-            <button class="hover linkedin"><i class="fab fa-linkedin"></i></button>
-            <button class="hover email"><i class="fa fa-envelope"></i></button>
-            <button class="view-ideia-bt bold hover">Ver Ideia</button>
-          </div>
+    <div class="mensage-box">
+      <header>
+        <div class="user">
+          <div class="avatar"></div>
+          Mensagens
         </div>
+        <div class="butons">
+          [/] ...
+        </div>
+      </header>
+
+      <div class="input-search">
+        P <input type="search"> |||
       </div>
+      <div class="chats">
 
-      <div class="container-ideia">
-        <div class="feature-image"><img src="./img/04.jpg" alt="" srcset=""></div>
-        <div class="body-ideia">
-          <div class="title-ideia">Águas azuis</div>
-          <div class="category-ideia">Filme</div>
-          <div class="description-ideia">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi, excepturi.
-          </div>
-          <div class="footer-ideia">
-            <span class="share">Compartilhe: </span>
-            <button class="whatsapp hover"><i class="fab fa-whatsapp"></i></button>
-            <button class="hover facebook"><i class="fab fa-facebook"></i></button>
-            <button class="hover linkedin"><i class="fab fa-linkedin"></i></button>
-            <button class="hover email"><i class="fa fa-envelope"></i></button>
-            <button class="view-ideia-bt bold hover">Ver Ideia</button>
-          </div>
-        </div>
-      </div>
-
-    </section>
-  </div>
-
-  <!-- Modal -->
-  <div id="modal" class="hide">
-    <div class="content">
-      <h1>Nova Ideia</h1>
-
-      <form action="">
-
-        <div class="input-container">
-
-          <div>
-            <label for="title">Título da ideia</label>
-            <input type="text" name="title">
-          </div>
-
-          <div>
-            <label for="title">Categoria</label>
-            <input type="text" name="category">
+        <div class="chat">
+          <div class="avatar"></div>
+          <div class="description">
+            <div class="name">Mayk Brito</div>
+            <div class="short-message">Você: Valeu, Mayk Brito</div>
           </div>
         </div>
 
-        <label for="title">Link da imagem</label>
-        <input type="url" name="image">
+        <div class="chat">
+          <div class="avatar"></div>
+          <div class="description">
+            <div class="name">Mayk Brito</div>
+            <div class="short-message">Você: Valeu, Mayk Brito</div>
+          </div>
+        </div>
 
-        <label for="title">Digite uma descrição para essa ideia</label>
-        <textarea name="description" cols="30" rows="10"></textarea>
+        <div class="chat">
+          <div class="avatar"></div>
+          <div class="description">
+            <div class="name">Mayk Brito</div>
+            <div class="short-message">Você: Valeu, Mayk Brito</div>
+          </div>
+        </div>
 
-        <label for="title">Link da ideia</label>
-        <input type="text" name="link">
+        <div class="chat">
+          <div class="avatar"></div>
+          <div class="description">
+            <div class="name">Mayk Brito</div>
+            <div class="short-message">Você: Valeu, Mayk Brito</div>
+          </div>
+        </div>
 
-      </form>
+        <div class="chat">
+          <div class="avatar"></div>
+          <div class="description">
+            <div class="name">Mayk Brito</div>
+            <div class="short-message">Você: Valeu, Mayk Brito</div>
+          </div>
+        </div>
 
-      <div class="button-container">
-        <button onclick="onOff()">Cancelar</button>
-        <button>Adicionar</button>
+
       </div>
 
     </div>
-  </div>
-
   <script src="js/main.min.js"></script>
 </body>
 
